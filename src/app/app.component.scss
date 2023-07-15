@@ -1,4 +1,4 @@
-.slideshow_Container {
+.slideshow_container {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -17,5 +17,22 @@
     }
     to {
         transform: scale(1.2);
+    }
+}
+
+.slideshow_overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+
+    p {
+        font-size: 50px;
+        max-width: 800px;
+        color: white;
+        border-left: 6px solid blue;
+        padding-left: 20px;
+        margin-left: 120px;
     }
 }

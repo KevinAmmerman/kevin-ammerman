@@ -1,3 +1,9 @@
-<div class="slideshow_Container">
+<div class="slideshow_container">
     <img *ngIf="showImage" class="img_slideshow" src="assets/img/{{ images[currentImage] }}">
+</div>
+
+<div *ngIf="showImage" class="slideshow_container slideshow_overlay">
+    <p>
+        Discover Scotland's Captivating Charms: Whisky, Majestic Landscapes, and Cultural Heritage
+    </p>
 </div>
