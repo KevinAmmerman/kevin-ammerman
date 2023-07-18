@@ -1,0 +1,82 @@
+.backgroundImage1 {
+    background-image: url(/assets/img/glenfiddich.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    overflow-x: hidden;
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 2;
+
+    h2 {
+        font-size: 32px;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 0 50px 0;
+    }
+}
+
+.infoFlexContainer1 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.infoContainer {
+    max-width: 500px;
+    height: fit-content;
+    background-color: rgba(0,0,0, 0.6);
+    padding: 32px;
+    box-shadow: 
+    0 0 10px rgba(0,0,0,0.5), 
+    0 0 20px rgba(0,0,0,0.2),
+    -5px 0 10px rgba(0,0,0,0.3),
+    5px 0 10px rgba(0,0,0,0.3);
+
+    div {
+        font-size: 18px;
+        color: white;
+        line-height: 25px;
+    }
+}
+
+.left {
+    margin-left: 120px;
+    margin-right: 50px;
+}
+
+.backgroundImage2 {
+    background-image: url(/assets/img/aberlour.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    overflow-x: hidden;
+    margin-bottom: 80px;
+
+    h2 {
+        font-size: 32px;
+        color: black;
+        margin: 0 0 50px 0;
+    }
+}
+
+.infoFlexContainer2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right {
+    margin-right: 120px;
+    margin-left: 50px;
+}

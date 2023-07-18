@@ -1,5 +1,5 @@
 <app-menu [darkmode]="router.url !== '/'"></app-menu>
-<div [class.container]="router.url !== '/'">
+<div [class.container]="router.url !== '/' && router.url !== '/travel'">
     <router-outlet></router-outlet>
 </div>
 <app-footer [darkmode]="router.url !== '/'"></app-footer>
