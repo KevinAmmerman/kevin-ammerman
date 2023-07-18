@@ -2,6 +2,7 @@ header {
     position: absolute;
     left: 0;
     right: 0;
+    top: 0;
     height: 80px;
     z-index: 2;
     display: flex;
@@ -22,8 +23,26 @@ header {
         border-bottom: 2px solid transparent;
 
         &:hover {
-            color: rgba(255,255,255,0.7);
-            border-bottom: 2px solid rgba(255,255,255,0.7);
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.7);
         }
     }
+
+    .darkLinks {
+
+        a {
+            color: black;
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.5);
+                border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+
+    }
+}
+
+.darkHeader {
+    background-color: white;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
