@@ -4,17 +4,17 @@
     <div class="desktopMenu" [class.darkLinks]="darkmode">
         <a routerLink="/">Home</a>
         <a routerLink="/travel">Travel</a>
-        <a href="#">Whisky</a>
+        <a routerLink="/whisky">Whisky</a>
         <a routerLink="/imprint">Imprint</a>
     </div>
     <button *ngIf="!darkmode" class="menuBtn menuBtnWhite" (click)="toggleMenu()"></button>
     <button *ngIf="darkmode" class="menuBtn menuBtnBlack" (click)="toggleMenu()"></button>
 </header>
-<div class="mobilMenuContainer" [class.darkMenu]="!darkmode">
-    <div class="mobilMenu dNone" [class.darkLinks]="darkmode" [class.dNone]="toggle">
+<div class="mobilMenuContainer dNone" [class.darkMenu]="!darkmode" [class.dNone]="toggle">
+    <div class="mobilMenu" [class.darkLinks]="darkmode">
         <a routerLink="/">Home</a>
         <a routerLink="/travel">Travel</a>
-        <a href="#">Whisky</a>
+        <a routerLink="/whisky">Whisky</a>
         <a routerLink="/imprint">Imprint</a>
     </div>
 </div>

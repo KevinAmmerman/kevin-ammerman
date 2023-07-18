@@ -7,7 +7,9 @@ import { Component, Input, ElementRef, HostListener } from '@angular/core';
 })
 export class MenuComponent {
   @Input() darkmode = true;
-  toggle = false;
+  toggle = true;
+
+  constructor(private elementRef: ElementRef) { }
 
   public toggleMenu() {
     this.toggle = !this.toggle;
@@ -21,6 +23,4 @@ export class MenuComponent {
       }
     }
   }
-
-  constructor(private elementRef: ElementRef) { }
 }

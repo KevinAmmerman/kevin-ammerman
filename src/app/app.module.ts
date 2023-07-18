@@ -9,6 +9,7 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataProtectionComponent } from './data-protection/data-protection.component';
 import { TravelComponent } from './travel/travel.component';
+import { WhiskyComponent } from './whisky/whisky.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TravelComponent } from './travel/travel.component';
     ImprintComponent,
     FooterComponent,
     DataProtectionComponent,
-    TravelComponent
+    TravelComponent,
+    WhiskyComponent
   ],
   imports: [
     BrowserModule,
