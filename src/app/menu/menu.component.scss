@@ -46,3 +46,96 @@ header {
     background-color: white;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
+
+.menuBtn {
+    display: none;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.menuBtnWhite {
+    background-image: url(/assets/img/menu_white.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+}
+
+.menuBtnBlack {
+    background-image: url(/assets/img/menu_black.png);
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.mobilMenuContainer {
+    position: fixed;
+    top: 80px;
+    z-index: 5;
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2x 3px 0 rgba(0, 0, 0, 0.2);
+
+    .mobilMenu {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    a {
+        width: fit-content;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+            color: rgba(255, 255, 255, 0.7);
+            border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+        }
+    }
+
+    .darkLinks {
+
+        a {
+            color: black;
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.5);
+                border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+            }
+        }
+
+    }
+}
+
+.darkMenu {
+    background-color: transparent;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dNone {
+    display: none !important;
+}
+
+@media (max-width: 800px) {
+
+    .desktopMenu {
+        display: none;
+    }
+
+    .menuBtn {
+        display: block;
+    }
+}

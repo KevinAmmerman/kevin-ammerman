@@ -52,3 +52,29 @@ footer {
         }
     }
 }
+
+.attribution {
+    display: flex;
+    
+    span {
+        margin-right: 8px;
+    }
+
+    a:first-of-type {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    footer {
+        flex-direction: column;
+        height: fit-content;
+        padding: 10px 0;
+    }
+
+    .attribution {
+        flex-direction: column;
+        align-items: center;
+    }
+}
