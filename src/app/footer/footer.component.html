@@ -1,12 +1,14 @@
 <footer [class.darkFooter]="darkmode">
     <span><span class="copyrightLogo">©</span>2023 Kevin Ammerman</span>
     <div class="attribution">
-        <span>Attribution:</span>
-        <a href="https://commons.wikimedia.org/wiki/File:Visitor_Entrance_-_panoramio.jpg"> Dg-505,</a>
-        <a href="https://commons.wikimedia.org/wiki/File:Aberlour_Distillery_2.JPG">Y. Kohno,</a>
-        <a href="https://commons.wikimedia.org/wiki/File:Glenfiddich_Products.jpg">Rennboot,</a>
-        <a href="https://commons.wikimedia.org/wiki/File:A%27bunadh_from_Batch_No._22.jpg">Pbaser</a>
-        <a title="Downloaded my icon from" href="https://app.logomakr.com/"> LogoMakr.com/app</a>
+        <span (click)="toggleMenu()">Attribution</span>
+        <div [class.dNone]="toggle">
+            <a href="https://commons.wikimedia.org/wiki/File:Visitor_Entrance_-_panoramio.jpg"> Dg-505,</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Aberlour_Distillery_2.JPG">Y. Kohno,</a>
+            <a href="https://commons.wikimedia.org/wiki/File:Glenfiddich_Products.jpg">Rennboot,</a>
+            <a href="https://commons.wikimedia.org/wiki/File:A%27bunadh_from_Batch_No._22.jpg">Pbaser</a>
+            <a title="Downloaded my icon from" href="https://app.logomakr.com/"> LogoMakr.com/app</a>
+        </div>
     </div>
     <a routerLink="/data-protection">Data-protection</a>
 </footer>
