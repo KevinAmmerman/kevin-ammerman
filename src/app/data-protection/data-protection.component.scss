@@ -1,3 +1,15 @@
 .data_protection {
     height: 100%;
 }
+
+@media (max-width: 400px) {
+
+    h1 {
+        font-size: 24px;
+    }
+
+    a:first-of-type {
+        display: block;
+        width: 320px;
+    }
+}
